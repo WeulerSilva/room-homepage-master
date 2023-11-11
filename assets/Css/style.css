@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.erase {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 62px;
+}
+
+.menu-mobile {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/icon-hamburger.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.div-fake {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  background-image: url(../images/logo.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 30px;
+  margin: 0px 48px 0px 62px;
+}
+
+.menu-list ul {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.menu-list ul li a {
+  color: white;
+  margin-right: 32px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 530px;
+  background-color: bisque;
+}
+
+.primary-image {
+  width: 58.4vw;
+  background-image: url(../images/desktop-image-hero-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.primary-text {
+  position: relative;
+  width: calc(100vw - 58.4vw);
+  background-color: white;
+  padding: 100px;
+  text-align: left;
+}
+
+.primary-text h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.shop {
+  display: flex;
+  margin-top: 20px;
+}
+
+.shop a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 8px;
+  font-weight: 600;
+}
+
+.shop-arrow {
+  width: 42px;
+  height: 14px;
+  background-image: url(../images/icon-arrow.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: -1px 0px 0px 15px;
+}
+
+.arrow-config {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 450px;
+  left: 0;
+  width: 160px;
+  height: 80px;
+  background-color: black;
+}
+
+.arrow-left {
+  width: 50%;
+  height: 35%;
+  background-image: url(../images/icon-angle-left.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.arrow-right {
+width: 50%;
+height: 35%;
+background-image: url(../images/icon-angle-right.svg);
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+cursor: pointer;
+}
+
+.about {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 530px);
+  overflow: hidden;
+}
+
+.first-image {
+  width: 29vw;
+  height: 100%;
+  background-image: url(../images/image-about-dark.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second-image {
+  width: 30.5vw;
+  height: 100%;
+  background-color: gray;
+  height: 100%;
+  background-image: url(../images/image-about-light.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-desc {
+  width: 40.5vw;
+  height: 100%;
+  text-align: left;
+  padding: 60px 45px;
+}
+
+.about-desc h1 {
+  margin-bottom: 20px;
+}
+
+.about-desc p {
+  color: grey;
+}
+
+.about-desc h1 {
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+
+.primary-text p {
+  color: grey;
+  font-size: 15px;
+}
+
+
+@media (min-width: 1445px) {
+  .shop {
+    margin-top: 70px;
+  }
+  .arrow-config {
+    left: 0px;
+  }
+  .about-desc h1 {
+    font-size: 30px; 
+  }
+}
+
+@media (max-width: 1200px) {
+  .primary-text {
+    padding: 65px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-desc {
+    padding: 40px 35px;
+  }
+  .primary-text {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 900px) {
+  .primary-text {
+    padding: 20px;
+  }
+  .about-desc {
+    padding: 10px;
+  }
+  .primary-text h1 {
+    margin-bottom: 25px;
+  }
+  .menu {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 765px) {
+  .logo {
+    margin: 0px 48px 0px 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .primary-image {
+    width: 50vw;
+  }
+  .primary-text {
+    width: 50vw;
+  }
+  .logo {
+    margin: 0px 15px;
+  }
+  .menu-list ul li a {
+    margin-right: 10px;
+  }
+  .about-desc {
+    width: 43vw;
+  }
+  .about-desc h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .second-image {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    overflow: auto;
+  }
+  .menu-mobile {
+    display: flex;
+  }
+  .div-fake {
+    display: flex;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .primary-text {
+    width: 100vw;
+    height: 400px;
+    padding: 50px 40px 0px 40px;
+  }
+  .primary-text h1 {
+    margin-bottom: 15px;
+    font-size: 35px;
+  }
+  .primary-image {
+    width: 100vw;
+    height: 360px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .menu-list ul li a {
+    color: black;
+    margin-right: 50px;
+  }
+  .menu {
+    justify-content: space-around;
+  }
+  .about {
+    flex-direction: column;
+    height: 400px;
+  }
+  .first-image {
+    width: 100vw;
+    height: 400px;
+  }
+  .about-desc {
+    width: 100vw;
+    height: 400px;
+  }
+  .second-image {
+    width: 100vw;
+  }
+  .arrow-config {
+    position: fixed;
+    top: 187px;
+    left: 488px;
+    width: 112px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 500px) {
+  .primary-text {
+    height: 460px;
+  }
+  .about {
+    height: 600px;
+  }
+  .about-desc {
+    height: 500px;
+  }
+  .arrow-config {
+    top: 168px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    height: 760px;
+  }
+  .primary-image {
+    height: 360px;
+  }
+  .primary-text {
+    height: 400px;
+  }
+  .primary-text h1 {
+    font-size: 34px;
+  }
+  .primary-text p {
+    margin-bottom: 40px;
+    line-height: 20px;
+  }
+  .about {
+    height: 760px;
+  }
+  .about-desc p {
+    line-height: 19px;
+  }
+  .first-image {
+    height: 235px;
+  }
+  .about-desc {
+    height: 300px;
+    padding: 50px 45px;
+  }
+  .about-desc h1 {
+    margin-bottom: 20px;
+  }
+  .second-image {
+    height: 225px;
+  }
+  .arrow-config {
+    top: 304px;
+  }
+  .menu-list ul li a {
+    margin-right: 10px;
+  }
+}
