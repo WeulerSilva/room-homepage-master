@@ -60,6 +60,14 @@
   text-decoration: none;
 }
 
+.border {
+  display: none;
+  width:20px;
+  height: 2.2px;
+  margin: 5px 0px 0px 10px;
+  background-color: white;
+}
+
 .container {
   display: flex;
   width: 100vw;
@@ -101,6 +109,10 @@
   font-weight: 600;
 }
 
+.shop a:hover {
+  color: grey;
+}
+
 .shop-arrow {
   width: 42px;
   height: 14px;
@@ -124,22 +136,26 @@
 
 .arrow-left {
   width: 50%;
-  height: 35%;
+  height: 100%;
   background-image: url(../images/icon-angle-left.svg);
   background-position: center;
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .arrow-right {
 width: 50%;
-height: 35%;
+height: 100%;
 background-image: url(../images/icon-angle-right.svg);
 background-position: center;
-background-size: contain;
+background-size: auto;
 background-repeat: no-repeat;
 cursor: pointer;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+  background-color: gray;
 }
 
 .about {
@@ -192,6 +208,10 @@ cursor: pointer;
 .primary-text p {
   color: grey;
   font-size: 15px;
+}
+
+.attribution {
+  text-align: center;
 }
 
 

@@ -7,8 +7,10 @@ const arrow = document.querySelector('.arrow-config');
 const menuMobile = document.querySelector('.menu-mobile');
 const menu = document.querySelector('.menu');
 const menuList = document.querySelector('.menu-list');
+const menuListA = document.querySelectorAll('.menu-list ul li a');
 const logo = document.querySelector('.logo');
 const divFake = document.querySelector('.div-fake');
+const border = document.querySelectorAll('.border');
 
 
 if(window.innerWidth <= 400) {
@@ -115,4 +117,13 @@ menuMobile.addEventListener('click', () => {
         divFake.style.display = 'flex';
     }
     
+})
+
+menuListA.forEach( (e, i) => {
+    e.addEventListener('mouseover', () => {
+        border[i].style.display = 'flex';
+    });
+    e.addEventListener('mouseout', () => {
+        border[i].style.display = 'none';
+    })
 })
