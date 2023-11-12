@@ -406,3 +406,12 @@ cursor: pointer;
     margin-right: 10px;
   }
 }
+
+@media (max-width: 325px) {
+  .primary-text {
+    padding: 30px 40px 0px 40px;
+  }
+  .about-desc {
+    padding: 20px 40px;
+  }
+}
